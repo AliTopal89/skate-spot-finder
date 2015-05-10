@@ -81,5 +81,5 @@ test:
 production:
   <<: *default
   database: SkateSpotApp_production
-  username: SkateSpotApp
-  password: <%= ENV['SKATESPOTAPP_DATABASE_PASSWORD'] %>
+  # username: SkateSpotApp
+  # password: <%= ENV['SKATESPOTAPP_DATABASE_PASSWORD'] %>
