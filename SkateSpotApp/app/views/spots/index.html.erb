@@ -1,11 +1,11 @@
 <h1>Find a spot</h1>
-<%= link_to 'Create a spot', spots_path %>
+
+<%= link_to "The Spots Found", new_spot_path %>
 
 <ul>
 <% @spots.each do |spot| %>
-  <p><%= spot.city %></p>
-  <p><%= spot.address %></p>
-  <p><%= spot.description %></p>
+  <li><%= link_to spot.city, spot %></li>
 <% end %>
 </ul>
+
  <%= render 'form' %>
