@@ -17,7 +17,7 @@ ActiveRecord::Schema.define(version: 20150510202011) do
   enable_extension "plpgsql"
 
   create_table "posts", force: :cascade do |t|
-    t.string  "comments"
+    t.text    "comments"
     t.string  "img_url"
     t.string  "video_url"
     t.integer "spot_id"

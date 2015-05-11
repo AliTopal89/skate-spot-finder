@@ -9,8 +9,15 @@
 
 <%= render :partial => 'posts/post', :object => @post %>
 
+<h3>Comments/Reviews</h3>
+<% @spot.posts.each do |post| %>
+<div class="comments">
+	<%= post.comments %></div>
+<% end %>
+
 
 <div class="photos">
+	<h3>Photos</h3>
 	<% @posts.each do |post| %>
 	<p><%=image_tag post.img_url%></p>
 	<% end %>
