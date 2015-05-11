@@ -1,4 +1,4 @@
-%= form_for @spot do |s| %>
+<%= form_for @spot do |s| %>
   <% if @spot.errors.any? %>
     <ul class='errors'>
       <% @spot.errors.full_messages.each do |err| %>
@@ -7,13 +7,13 @@
     </ul>
   <% end %>
   <%= s.label :city %>
-  <%= s.text_field :city %>
+  <%= s.text_field :city, :placeholder => "city name" %>
   <br>
   <%= s.label :address %>
-  <%= s.text_area :address %>
+  <%= s.text_area :address, :placeholder => "exact address " %>
   <br>
   <%= s.label :description %>
-  <%= s.text_area :description %>
+  <%= s.text_area :description, :placeholder => "brief description"  %>
 
   <%= s.submit %>
 <% end %>
