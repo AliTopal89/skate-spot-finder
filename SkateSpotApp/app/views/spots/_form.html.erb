@@ -1,0 +1,19 @@
+%= form_for @spot do |s| %>
+  <% if @spot.errors.any? %>
+    <ul class='errors'>
+      <% @spot.errors.full_messages.each do |err| %>
+        <li class='error'><%= err %></li>
+      <% end %>
+    </ul>
+  <% end %>
+  <%= s.label :city %>
+  <%= s.text_field :city %>
+  <br>
+  <%= s.label :address %>
+  <%= s.text_area :address %>
+  <br>
+  <%= s.label :description %>
+  <%= s.text_area :description %>
+
+  <%= s.submit %>
+<% end %>

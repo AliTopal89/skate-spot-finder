@@ -1,1 +1,10 @@
 <h1>Find a spot</h1>
+<%= link_to 'Add a spot', spots_path %>
+
+<ul>
+<% @spots.each do |spot| %>
+  <li><%= link_to spot.city, spots_path %></li>
+  <p><%= spot.description %></p>
+  <p><%= spot.address %></p>
+<% end %>
+</ul>
