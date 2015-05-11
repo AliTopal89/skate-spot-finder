@@ -7,8 +7,10 @@ Rails.application.routes.draw do
   root 'welcome#index'
 
   resources :users
-  resources :spots
-  resources :posts
+  
+  resources :spots do
+    resources :posts
+  end
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
