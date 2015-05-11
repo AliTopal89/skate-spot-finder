@@ -2,14 +2,15 @@ class SpotsController < ApplicationController
 
 	def index
 		@spots = Spot.all
-		# @city = @spot.city
-		# @address = @spot.address
-		# @description = @spot.description
+
 
 	end
 
 	def show
 		@spot = Spot.find(params[:id])
+		@city = @spot.city
+		@address = @spot.address
+		@description = @spot.description
 		
 
 	end
@@ -20,11 +21,18 @@ class SpotsController < ApplicationController
 	end
 
 	def create
+		@spot = Spot.new(spot_params)
+		if @spot.save
+			redirect_to @spot
+		else
+			render :new
+		end
 
 	end
 
 	private 
-		def spots_params
+
+		def spot_params
 			params.require(:spot).permit(
 				:city,
 				:address,
