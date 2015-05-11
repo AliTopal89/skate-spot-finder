@@ -1,5 +1,6 @@
 class Spot < ActiveRecord::Base
 	has_many :posts
+	belongs_to :user
 	validates :city, :address, :description, presence:true
 end
 # 		t.string :city
