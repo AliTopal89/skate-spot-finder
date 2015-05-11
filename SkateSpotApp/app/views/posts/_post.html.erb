@@ -1,6 +1,7 @@
-<%= form_for [@spot, @spot.posts.build] do |p| %>
+<%= form_for ([@spot, @spot.posts.build]) do |p| %>
 
 <%= p.text_field :img_url %>
+
 
 <%= p.submit %>
 

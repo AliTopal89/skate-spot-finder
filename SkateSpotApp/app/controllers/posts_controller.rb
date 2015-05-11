@@ -10,7 +10,9 @@ class PostsController < ApplicationController
 	end
 
 	def create
+		@spot = Spot.find(params[:spot_id])
 		@post = Post.new(post_params)
+		@post.spot_id = @spot.id
 		if @post.save
 			redirect_to @spot
 		else
@@ -29,7 +31,8 @@ class PostsController < ApplicationController
 			params.require(:post).permit(
 				:comments,
 				:img_url,
-				:video_url
+				:video_url,
+				:spot_id
 				)
 	end
 

@@ -12,7 +12,7 @@ class SpotsController < ApplicationController
 		@city = @spot.city
 		@address = @spot.address
 		@description = @spot.description
-		@posts = Post.all
+		@posts = @spot.posts
 		@post = Post.new
 
 	end

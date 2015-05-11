@@ -1,7 +1,7 @@
 class Post < ActiveRecord::Base
 	belongs_to :spot
 	belongs_to :user
-	validates :comments, :img_url, :video_url, presence: true
+	validates  :img_url, presence: true
 
 end
 

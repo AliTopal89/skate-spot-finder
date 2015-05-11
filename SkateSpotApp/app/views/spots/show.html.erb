@@ -9,9 +9,10 @@
 
 <%= render :partial => 'posts/post', :object => @post %>
 
+
 <div class="photos">
 	<% @posts.each do |post| %>
-	<p><%=image_tag post.img_url, spot_path%></p>
+	<p><%=image_tag post.img_url%></p>
 	<% end %>
 </div>
 
