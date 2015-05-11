@@ -11,8 +11,7 @@ class PostsController < ApplicationController
 
 	def create
 		@spot = Spot.find(params[:spot_id])
-		@post = Post.new(post_params)
-		@post.spot_id = @spot.id
+		@post = @spot.posts.build(post_params)
 		if @post.save
 			redirect_to @spot
 		else
