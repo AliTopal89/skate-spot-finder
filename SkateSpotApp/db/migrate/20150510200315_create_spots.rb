@@ -5,7 +5,7 @@ class CreateSpots < ActiveRecord::Migration
     	t.string :address, :null => false
     	t.string :description
     	t.integer :smoothness
-    	t.integer :spot
+    	t.integer :spot_quality
     	t.integer :human_traffic
     	t.integer :security
     end

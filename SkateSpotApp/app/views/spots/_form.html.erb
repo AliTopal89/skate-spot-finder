@@ -14,6 +14,28 @@
   <br>
   <%= s.label :description %>
   <%= s.text_area :description, :placeholder => "brief description"  %>
+  <br>
+  <%= s.label :spot_quality %>
+  <div class= "dropdown number">
+    <!-- <img src = "thespot.png"/> -->
+  <%= s.select :spot_quality,options_for_select(0..5) %>
+  </div>
+
+  <%= s.label :smoothness %>
+  <div class= "dropdown number">
+  <%= s.select :smoothness,options_for_select(0..5) %>
+  </div>
+
+  <%= s.label :human_traffic %>
+  <div class= "dropdown number">
+  <%= s.select :human_traffic,options_for_select(0..5) %>
+  </div>
+
+  <%= s.label :security %>
+  <div class= "dropdown number">
+  <%= s.select :security,options_for_select(0..5) %>
+  </div>
+
 
   <%= s.submit %>
 <% end %>

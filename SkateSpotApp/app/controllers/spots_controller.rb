@@ -12,6 +12,10 @@ class SpotsController < ApplicationController
 		@city = @spot.city
 		@address = @spot.address
 		@description = @spot.description
+		@spot_quality = @spot.spot_quality
+		@smoothness = @spot.smoothness
+		@human_traffic = @spot.human_traffic
+		@security = @spot.security
 		@posts = @spot.posts
 		@post = Post.new
 
@@ -39,8 +43,8 @@ class SpotsController < ApplicationController
 				:city,
 				:address,
 				:description,
+				:spot_quality,
 				:smoothness,
-				:spot,
 				:human_traffic,
 				:security
 				)

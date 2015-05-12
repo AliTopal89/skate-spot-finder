@@ -5,6 +5,14 @@
 	<h3><%= @spot.city %></h3>
 	<h3><%= @spot.address %></h3>
 	<h3><%= @spot.description %></h3>
+	<h4>spot quality</h4>
+	<h5><%= @spot.spot_quality %></h5>
+	<h4>smooth as a butter or is it Mordor</h4>
+	<h5><%= @spot.smoothness %></h5>
+	<h4>lost humans like lost puppies</h4>
+	<h5><%= @spot.human_traffic %></h5>
+	<h4>POLIZEI?</h4>
+	<h5><%= @spot.security %></h5>
 </div>
 
 <%= render :partial => 'posts/post', :object => @post %>
