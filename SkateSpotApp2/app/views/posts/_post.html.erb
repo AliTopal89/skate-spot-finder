@@ -1,0 +1,13 @@
+<%= form_for ([@spot, @spot.posts.build]) do |p| %>
+
+<%= p.text_area :comments %>
+<%= p.submit %>
+<br>
+<br>
+<br>
+<%= p.text_field :img_url %>
+
+
+<%= p.submit %>
+
+<% end %>
