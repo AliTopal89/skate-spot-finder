@@ -8,7 +8,7 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-	<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+	 <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
 
 	<%= "Welcome #{current_or_guest_user.email}" %>
 	<%= link_to"Login", new_user_session_path unless user_signed_in? %>

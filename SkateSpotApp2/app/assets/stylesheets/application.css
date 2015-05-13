@@ -14,6 +14,10 @@
  *= require_self
  */
 #map { 
-	height: 180px;
-	width: 500px; 
+	height: 350px;
+	width: 800px;
+	display: table-cell;
+	left:40%;
+	margin-right: auto; 
 }
+
