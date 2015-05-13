@@ -76,10 +76,11 @@ a
 	-webkit-font-smoothing: antialiased;
 	border-left: 1px solid #e2e1e1;
 
+
 }
 .icon img{
-	display: inline-block;
-  	-moz-border-radius: 100px;
+  display: inline-block;
+  -moz-border-radius: 100px;
   	-webkit-border-radius: 100px;
   	border-radius: 100px;
   	-moz-box-shadow: 0px 0px 2px #888;
@@ -92,6 +93,8 @@ a
   	width: 8%;
 
 }
+
+n-of-
 
 p {
 	font-family: "klinic_slabbook", helvetica, arial, sans-serif;
