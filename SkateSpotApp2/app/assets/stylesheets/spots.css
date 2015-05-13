@@ -1,0 +1,19 @@
+.background img {
+  opacity: 0.3;
+  filter: alpha(opacity=30);
+  background-size: 100%;
+  left:10%;
+  overflow: auto;
+  text-align: center;
+  background-image:
+  linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  position: absolute;
+
+}
+
+formItem label {
+    display: block;
+    text-align: center;
+    line-height: 150%;
+    font-size: .85em;
+}
