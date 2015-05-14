@@ -1,4 +1,3 @@
-<link rel="stylesheet" href="/path/to/spots.css" media="screen">
 <div class= "background">
 		<%= image_tag "skatecover.jpg" %>
 </div>
@@ -14,7 +13,7 @@
 
 <h1>The Spots Found</h1>
 <ul>
-	<h3><% @spots.each do |spot| %>
+	<% @spots.each do |spot| %>
   <li><%= link_to spot.city, spot %></li>
 <% end %>
 </ul>
