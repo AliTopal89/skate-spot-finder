@@ -8,12 +8,37 @@
   background-image:
   linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
   position: absolute;
+  pointer-events: none;
 
 }
 
-formItem label {
-    display: block;
-    text-align: center;
-    line-height: 150%;
-    font-size: .85em;
+h3 {
+	float: left;
+	width: 4em;
+	margin-right: 4em;
+
+}
+
+label {
+	float: left;
+	width: 10em;
+	margin-right: 15em;
+}
+/*.dropdown_number {
+	float: left;
+	width: 40em;
+	margin-right: 20em;
+}*/
+
+li{
+	text-align: center;
+
+}
+
+/*.city {
+	float: left;
+	width: 6em;
+	margin-right: 0em;
+	text-align: center;
+
 }

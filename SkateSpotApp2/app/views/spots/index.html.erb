@@ -12,12 +12,13 @@
 
 
 
-<h2>The Spots Found</h2>
-
+<h1>The Spots Found</h1>
 <ul>
-<% @spots.each do |spot| %>
+
+<h3><% @spots.each do |spot| %>
   <li><%= link_to spot.city, spot %></li>
 <% end %>
 </ul>
+</div>
 
  <%= render 'form' %>
