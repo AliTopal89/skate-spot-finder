@@ -1,11 +1,9 @@
-<div class= "background">
-		<%= image_tag "skatecover.jpg" %>
-</div>
+<div class="background" style="background-image: url('<%= asset_path 'skatecover.jpg' %>')"></div>
 <ul>
 	<li>
 		<%=link_to "Home Page", root_path %>
 	</li>
-	<h1>Find a spot</h1>
+	<li><h1>Find a spot</h1></li>
 
 </ul>
 
@@ -17,6 +15,5 @@
   <li><%= link_to spot.city, spot %></li>
 <% end %>
 </ul>
-</div>
 
  <%= render 'form' %>

@@ -6,38 +6,45 @@
       <% end %>
     </ul>
   <% end %>
-  <div style="display:table-cell;vertical-align:middle;">
-    <%= s.label :city %>
-  <%= s.text_field :city, :placeholder => "city name" %>
-  <br>
-  <%= s.label :address %>
-  <%= s.text_area :address, :placeholder => "exact address " %>
-  <br>
-  <%= s.label :description %>
-  <%= s.text_area :description, :placeholder => "brief description"  %>
-  <br>
-  <div class= "dropdown_number">
-    <%= s.label :spot_quality %>
-    <%= s.select :spot_quality,options_for_select(0..5) %>
-  </div>
+  <main class="spots">
+    <div>
+      <%= s.label :city %>
+      <%= s.text_field :city, :placeholder => "city name" %>
+    </div>
 
-  <div class= "dropdown_number">
-    <%= s.label :smoothness %>
-    <%= s.select :smoothness,options_for_select(0..5) %>
-  </div>
+    <div>
+      <%= s.label :address %>
+      <%= s.text_area :address, :placeholder => "exact address " %>
+    </div>
 
-  <div class= "dropdown_number">
-    <%= s.label :human_traffic %>
-    <%= s.select :human_traffic,options_for_select(0..5) %>
-  </div>
+    <div>
+      <%= s.label :description %>
+      <%= s.text_area :description, :placeholder => "brief description"  %>
+    </div>
 
-  <div class= "dropdown_number">
-    <%= s.label :security %>
-    <%= s.select :security,options_for_select(0..5) %>
-  </div>
+    <div class= "dropdown_number">
+      <%= s.label :spot_quality %>
+      <%= s.select :spot_quality,options_for_select(0..5) %>
+    </div>
 
+    <div class= "dropdown_number">
+      <%= s.label :smoothness %>
+      <%= s.select :smoothness,options_for_select(0..5) %>
+    </div>
 
+    <div class= "dropdown_number">
+      <%= s.label :human_traffic %>
+      <%= s.select :human_traffic,options_for_select(0..5) %>
+    </div>
 
-  <%= s.submit %>
+    <div class= "dropdown_number">
+      <%= s.label :security %>
+      <%= s.select :security,options_for_select(0..5) %>
+    </div>
+
+    <div>
+        <%= s.submit %>
+    </div>
+
+  </main>
 <% end %>
-</div>

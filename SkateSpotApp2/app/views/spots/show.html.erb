@@ -1,11 +1,9 @@
 <%#<%= javascript_include_tag "//www.google.com/jsapi", "chartkick" %>
  <div id="map"></div>
-</div>
- <br>
-<li>
-	<%=link_to "Home Page", root_path %>
-</li>
-<a href="/spots"<b>list of Spots</b></a>
+
+ <%=link_to "Home Page", root_path %>
+
+<a href="/spots"><b>list of Spots</b></a>
 <div>
 	<h2>Lets put in the details</h2>
 	<h3><%= @spot.city %></h3>
@@ -38,12 +36,6 @@
 	<% end %>
 </div>
 
-<div class="vidoes"
-	<h3>Videos</h3>
-	<%= @posts.each do |post| %>
-	<p><%=video_tag post.video_url%></p>
-	<% end %>
-</div>
 
 <script>
   $(document).ready(function(){
