@@ -12,15 +12,24 @@
 
 }
 
-h3 {
+#posts {
 	font-size: 17px;
 	float: left;
-	width: 5em;
-	margin-right: 5em;
+	width: 15em;
+	margin-right: 10em;
 
 }
 
-
+.dropdown_number {
+	display:table-cell;
+	margin-right: 10em;
+	margin-left: 10em;
+}
+/*label[for=spot_city]{
+	float: left;
+	width: 10em;
+	margin-right: 15em;
+}*/
 
 
 label {
@@ -34,10 +43,10 @@ label {
 	margin-right: 20em;
 }*/
 
-li{
+/*li{
 	text-align: center;
 
-}
+}*/
 
 /*.city {
 	float: left;
