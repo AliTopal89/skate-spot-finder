@@ -2,7 +2,9 @@
  <div id="map"></div>
 
  <%=link_to "Home Page", root_path %>
-
+<div id="temperature_c">temperature</div>
+<div id="temperature_f">temperature</div>
+  
 <a href="/spots"><b>list of Spots</b></a>
 <div>
 	<h2>Lets put in the details</h2>
@@ -37,11 +39,17 @@
 </div>
 
 
+
+
 <script>
   $(document).ready(function(){
   	initializeMap();
   });
 </script>
+
+
+
+
 
 
 

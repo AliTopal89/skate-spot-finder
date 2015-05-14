@@ -5,10 +5,12 @@
   <%= stylesheet_link_tag "//cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" %>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag "//cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js" %>
+  <%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js" %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+	
 
 	<%= "Welcome #{current_or_guest_user.email}" %>
 	<%= link_to"Login", new_user_session_path unless user_signed_in? %>

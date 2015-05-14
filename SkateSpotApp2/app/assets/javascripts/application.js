@@ -15,4 +15,18 @@
 //= require turbolinks
 //= require_tree .
 
+$(document).ready(function(){
+  var weatherUndergroundUrl = "http://api.wunderground.com/api/a006be1136f587ee/conditions/q/DC/Washington.json"
+  $.ajax({
+    url: weatherUndergroundUrl,
+    type: "GET",
+    dataType: "json"
+  }).done(function(response){
+    // console.log(response.current_observation.temp_f) // for testing 
+    // console.log(response.current_observation.temp_c) // for testing 
+    $("#temperature_c").append("   " + response.current_observation.temp_c + " Celsius")
 
+    $("#temperature_f").append("   " + response.current_observation.temp_f + " Fahreneit")
+	})
+});
+ 
