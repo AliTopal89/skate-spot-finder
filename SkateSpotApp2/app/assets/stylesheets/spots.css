@@ -13,11 +13,15 @@
 }
 
 h3 {
+	font-size: 17px;
 	float: left;
-	width: 4em;
-	margin-right: 4em;
+	width: 5em;
+	margin-right: 5em;
 
 }
+
+
+
 
 label {
 	float: left;
