@@ -1,9 +1,9 @@
-<%#<%= javascript_include_tag "//www.google.com/jsapi", "chartkick" %>
+<%= javascript_include_tag "//www.google.com/jsapi", "chartkick" %>
  <div id="map"></div>
 
  <%=link_to "Home Page", root_path %>
-<div id="temperature_c">temperature</div>
-<div id="temperature_f">temperature</div>
+<div id="temperature_c">temperature is</div>
+<div id="temperature_f">temperature is</div>
   
 <a href="/spots"><b>list of Spots</b></a>
 <div>
@@ -11,7 +11,6 @@
 	<h3><%= @spot.city %></h3>
 	<h3><%= @spot.address %></h3>
 	<h3><%= @spot.description %></h3><br>
-	<br>
 	<h4>spot quality</h4>
 	<h5><%= @spot.spot_quality %></h5>
 	<h4>smooth as a butter or is it Mordor</h4>
@@ -21,6 +20,16 @@
 	<h4>POLIZEI?</h4>
 	<h5><%= @spot.security %></h5>
 </div>
+
+<h1>Ratings</h1>
+<%= column_chart [
+  ["Spot", @spot.spot_quality],
+  ["Smoothness", @spot.smoothness],
+  ["Human Traffic", @spot.human_traffic],
+  ["secuirty", @spot.security],
+  
+]
+%>
 
 <%= render :partial => 'posts/post', :object => @post %>
 
@@ -37,9 +46,6 @@
 	<p><%=image_tag post.img_url%></p>
 	<% end %>
 </div>
-
-
-
 
 <script>
   $(document).ready(function(){
