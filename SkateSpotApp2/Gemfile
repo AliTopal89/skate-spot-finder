@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'figaro'
 # Use pry when needed
 gem 'pry'
 # User Authentication

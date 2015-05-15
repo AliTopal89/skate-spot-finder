@@ -16,7 +16,8 @@
 //= require_tree .
 
 $(document).ready(function(){
-  var weatherUndergroundUrl = "http://api.wunderground.com/api/a006be1136f587ee/conditions/q/DC/Washington.json"
+  console.log("foo")
+  var weatherUndergroundUrl = "https://api.wunderground.com/api/a006be1136f587ee/conditions/q/DC/Washington.json"
   $.ajax({
     url: weatherUndergroundUrl,
     type: "GET",
