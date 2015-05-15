@@ -56,11 +56,7 @@ main>div {
   width:200px;
   text-align:center;
 }
-/*.dropdown_number {
-	display:table-cell;
-	margin-right: 10em;
-	margin-left: 10em;
-}*/
+
 input,label,textarea{
 	width:100%;
 }
@@ -121,7 +117,6 @@ a
   	width: auto;
   	background-size: cover;
 }
-
 .icon
 {
 	text-align:center;
@@ -152,3 +147,9 @@ p {
 	font-size: 0.9375rem;
 	margin: 0;
 }
+input[type=text]{
+	height: 50px;
+ 	display:block;
+	margin-left:auto;
+	margin-right:auto;
+ }
