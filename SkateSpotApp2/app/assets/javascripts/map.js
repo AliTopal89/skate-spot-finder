@@ -18,6 +18,7 @@ function initializeMap(){
 		}
 	}
 	var marker = L.marker([38.90, -77.03]).addTo(map);
+// so i see that you hard coded a marker to your map, any plans to diversify this? how might you implement this, even without knowing other lat longs and only knowing this one? Once you solve this piece of the puzzle, than all you need is a database with lat/longs
 
 
 }

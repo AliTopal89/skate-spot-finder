@@ -1,5 +1,6 @@
 class User < ActiveRecord::Base
 	has_many :posts
+	# im curious why you decided on a one to many relationship with spots?
 	has_many :spots
 
 	# Virtual attribute for authenticating by either username or email

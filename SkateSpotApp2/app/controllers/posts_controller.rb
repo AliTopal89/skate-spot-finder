@@ -1,5 +1,5 @@
-class PostsController < ApplicationController 
-	
+class PostsController < ApplicationController
+	# are you using this index resource in your application?
 	def index
 		@posts = Post.all
 		@post = Post.new
@@ -17,7 +17,7 @@ class PostsController < ApplicationController
 		else
 			render :new
 		end
-	
+
 	end
 
 	def show
