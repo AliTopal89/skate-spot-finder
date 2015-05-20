@@ -5,6 +5,7 @@ class Post < ActiveRecord::Base
 
 end
 
+# get rid of comments like this for production
  # create_table :posts do |t|
  #    	t.string :comments
  #    	t.string :img_url

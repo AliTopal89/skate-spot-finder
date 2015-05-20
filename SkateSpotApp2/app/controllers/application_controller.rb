@@ -32,7 +32,7 @@ class ApplicationController < ActionController::Base
   def guest_user(with_retry = true)
     # Cache the value the first time it's gotten.
     @cached_guest_user ||= User.find(session[:guest_user_id] ||= create_guest_user.id)
-
+    # minor but code indentation on line 36
   rescue ActiveRecord::RecordNotFound # if session[:guest_user_id] invalid
      session[:guest_user_id] = nil
      guest_user if with_retry
@@ -42,6 +42,7 @@ class ApplicationController < ActionController::Base
 
   # called (once) when the user logs in, insert any code your application needs
   # to hand off from guest_user to current_user.
+  # confused what the use of this method is? nothin inside it
   def logging_in
     # For example:
     # guest_comments = guest_user.comments.all

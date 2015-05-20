@@ -1,4 +1,5 @@
 class Spot < ActiveRecord::Base
+	# nice validations!
 	has_many :posts
 	belongs_to :user
 	validates :city, :address, :description, presence:true

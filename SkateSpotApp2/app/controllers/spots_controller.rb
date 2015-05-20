@@ -1,5 +1,5 @@
 class SpotsController < ApplicationController
-
+# this all looks good
 	def index
 		@spots = Spot.all
 		@spot = Spot.new
@@ -23,7 +23,7 @@ class SpotsController < ApplicationController
 
 	def new
 		@spot = Spot.new
-	
+
 	end
 
 	def create
@@ -36,7 +36,7 @@ class SpotsController < ApplicationController
 
 	end
 
-	private 
+	private
 
 		def spot_params
 			params.require(:spot).permit(
@@ -49,7 +49,7 @@ class SpotsController < ApplicationController
 				:security
 				)
 		end
-	
+
 end
 		# t.string :city
   #   	t.string :address, :null => false

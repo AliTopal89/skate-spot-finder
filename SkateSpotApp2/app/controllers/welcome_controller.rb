@@ -1,10 +1,11 @@
 class WelcomeController < ApplicationController
-	
+
 	def index
-	
+
 	end
 
-	def show 
+# whats the purpose of the show action?
+	def show
 
 	end
 

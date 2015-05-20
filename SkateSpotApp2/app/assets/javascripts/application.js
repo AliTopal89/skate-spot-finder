@@ -15,18 +15,19 @@
 //= require turbolinks
 //= require_tree .
 
+// going forward, what different things might you want to integrate with JS?
 $(document).ready(function(){
+  // i noticed that the weather is always DC weather, i think you could make this modular depending on the spot you visit
   var weatherUndergroundUrl = "http://api.wunderground.com/api/a006be1136f587ee/conditions/q/DC/Washington.json"
   $.ajax({
     url: weatherUndergroundUrl,
     type: "GET",
     dataType: "json"
   }).done(function(response){
-    // console.log(response.current_observation.temp_f) // for testing 
-    // console.log(response.current_observation.temp_c) // for testing 
+    // console.log(response.current_observation.temp_f) // for testing
+    // console.log(response.current_observation.temp_c) // for testing
     $("#temperature_c").append("   " + response.current_observation.temp_c + " Celsius")
 
     $("#temperature_f").append("   " + response.current_observation.temp_f + " Fahreneit")
 	})
 });
- 
