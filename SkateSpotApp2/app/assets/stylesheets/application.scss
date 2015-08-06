@@ -14,6 +14,7 @@
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "bootstrap/theme";
 
 *{
 	box-sizing:border-box;
@@ -93,13 +94,17 @@ a
 	background-color: #369;
 	text-decoration: none;
 }
+
 .intro {
-	text-align: center;
 	margin: 1em auto;
   	padding: 1em 1em 1em 1em;
   	font-size: 0.85em;
-  	font-weight: 700;
+  	
+}
 
+.intro:hover {
+	-webkit-filter: contrast(2);
+	filter: contrast(2);
 }
 
 .about h2{
@@ -129,7 +134,7 @@ a
 .icon img
 {
 	width:150px;
-	width:150px;
+	height:150px;
 	box-shadow:0px 0px 20px 0px black;
 	border-radius:75px;
 	overflow:hidden;
@@ -159,9 +164,12 @@ a
 
 p {
 	font-family: "klinic_slabbook", helvetica, arial, sans-serif;
-	font-size: 0.9375rem;
-	margin: 0;
+	font-size: 1.05rem;
+	margin: 1em auto;
+	color: orange;
 }
+
+
 input[type=text]{
 	height: 50px;
  	display:block;
