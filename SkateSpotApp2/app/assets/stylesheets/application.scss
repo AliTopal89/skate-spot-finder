@@ -16,6 +16,7 @@
 @import "bootstrap";
 @import "bootstrap/theme";
 
+@grid-float-breakpoint: 768px;
 *{
 	box-sizing:border-box;
 	margin:0;
@@ -37,6 +38,8 @@
 body
 {
 	text-align:center;
+	padding-top:20px;
+	padding-bottom: 50px;
 }
 #map { 
 	height: 350px;
@@ -68,32 +71,16 @@ label {
 	display:block;
 }
 
-#navcontainer ul{
-	margin: 0;
-	padding: 0;
-	list-style-type: none;
-	text-align: center;
+#container{
+  position:relative;
+  padding:2px 0px;
+  
 }
 
-#navcontainer ul li { 
-	display: inline;
-	padding: .2em 1em;
-	color: #fff;
-	width: 49%;
-	height: 65px;
-  	background: #3CA1D1;
-}
-
-a
-{
+a {
 	text-decoration:none;
 }
 
-#navcontainer ul li :hover{
-	color: #fff;
-	background-color: #369;
-	text-decoration: none;
-}
 
 .intro {
 	margin: 1em auto;
