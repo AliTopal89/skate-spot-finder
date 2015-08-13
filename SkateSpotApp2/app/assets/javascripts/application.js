@@ -17,6 +17,9 @@
 
 
 $(document).ready(function(){
+  $('.nav li').on('click', function(){
+    $(".navbar-toggle").click() //bootstrap 3.x by Richard
+});
   console.log("foo")
   var weatherUndergroundUrl = "https://api.wunderground.com/api/a006be1136f587ee/conditions/q/DC/Washington.json"
   $.ajax({
