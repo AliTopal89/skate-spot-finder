@@ -72,6 +72,10 @@ main>div {
 	border: solid 1px #b8b8b9;
 }
 
+.posts>div>label {
+	border: solid 1px #b8b8b9;
+}
+
 input,label,textarea{
 	width:100%;
 }
@@ -170,5 +174,38 @@ input[type=text]{
  	display:block;
 	margin-left:auto;
 	margin-right:auto;
- }
+}
+
+.photos img{
+	width: 300px;
+  	height: 200px;
+  	object-fit:cover;
+  	border: 1px solid #000;
+}
+#postcreation{
+	width: 300px;
+	display: inline-block;
+	position:relative;
+}
+
+#postcreation textarea#post_comments {
+	height: 50px;
+	display: block;
+	text-align:center;
+	width: 300px;
+	position:relative;
+	border: 1px solid #000;
+	margin-bottom:3px; 
+}
+
+#postcreation input[type=text] { 
+	height: 50px;
+	display: block;
+	text-align:center; 
+	width: 300px;
+	border: 1px solid #000;
+	margin-bottom:3px; 
+}
+
+
 

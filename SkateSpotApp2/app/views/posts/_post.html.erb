@@ -1,13 +1,15 @@
-<%= form_for ([@spot, @spot.posts.build]) do |p| %>
+<div id= "postcreation">
+	<%= form_for ([@spot, @spot.posts.build]) do |p| %>
 
-<%= p.text_area :comments %>
-<%= p.submit %>
-<br>
-<br>
-<br>
-<%= p.text_field :img_url %>
-<%= p.submit %>
-<br>
-<br>
+	<%= p.text_area :comments, placeholder: "comments here" %>
+	<%= p.submit %>
+	<br>
+	<br>
+	<br>
+	<%= p.text_field :img_url, placeholder: "post an image url" %>
+	<%= p.submit %>
+	<br>
+	<br>
 
-<% end %>
+	<% end %>
+</div>

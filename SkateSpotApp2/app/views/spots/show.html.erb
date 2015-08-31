@@ -44,12 +44,13 @@
 <% end %>
 
 
+<h3>Photos</h3>
 <div class="photos">
-	<h3>Photos</h3>
 	<% @posts.each do |post| %>
-	<p><%=image_tag post.img_url%></p>
-	<% end %>
-</div>
+	<br>
+	<%=image_tag post.img_url %></div>
+<% end %>
+
 
 <script>
   $(document).ready(function(){
