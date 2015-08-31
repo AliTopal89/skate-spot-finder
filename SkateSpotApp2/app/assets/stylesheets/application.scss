@@ -23,6 +23,7 @@
 	padding:0;
 	border:0;
 }
+
 .background{
 	position:absolute;
 	top:0;
@@ -35,9 +36,11 @@
 	opacity:0.3;
 	z-index:-1;
 }
+
 body
 {
 	text-align:center;
+	text-decoration:none;
 	padding-top:20px;
 	padding-bottom: 50px;
 }
@@ -62,6 +65,7 @@ main>div {
   margin: 2px auto;
   width:200px;
   text-align:center;
+
 
 }
 .spots>div>label {
@@ -143,8 +147,7 @@ a {
 	transform: scale(-1,1);
 }
 
-.icon>div
-{
+.icon>div{
 	display:inline-block;
 	width:170px;
 	padding:10px;
@@ -169,4 +172,3 @@ input[type=text]{
 	margin-right:auto;
  }
 
- 
