@@ -23,8 +23,11 @@ $(document).ready(function(){
     type: "GET",
     dataType: "json"
   }).done(function(response){
+    var $img = $('<img></img>');
+    $img.attr('src', response.current_observation.icon_url)
+    $("#icon").append($img);
     // console.log(response.current_observation.temp_f) // for testing 
-    // console.log(response.current_observation.temp_c) // for testing 
+    // console.log(response.current_observation.temp_c) // for testing
     $("#temperature_c").append("   " + response.current_observation.temp_c + " Celsius")
 
     $("#temperature_f").append("   " + response.current_observation.temp_f + " Fahreneit")
